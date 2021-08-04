@@ -1,0 +1,245 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(/images/bg-intro-desktop.png);
+  background-color: #ff7a7a;
+  font-size: 16px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 95vh;
+  padding-left: 320px;
+  padding-right: 320px;
+}
+
+main .left__container {
+  padding: 20px 20px 20px 20px;
+  color: white;
+  height: 350px;
+  width: 600px;
+}
+
+main .left__container .left__header {
+  font-size: 50px;
+}
+
+main .right__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 95vh;
+  padding-top: 120px;
+  padding-bottom: 100px;
+  min-height: 900px;
+}
+
+main .right__container .purple__card {
+  background-color: #6055a5;
+  height: 60px;
+  width: 540px;
+  border-radius: 8px 8px 8px 8px;
+  -webkit-box-shadow: 0 8px rgba(80, 78, 78, 0.383);
+          box-shadow: 0 8px rgba(80, 78, 78, 0.383);
+}
+
+main .right__container .purple__card p {
+  color: white;
+  text-align: center;
+}
+
+main .right__container .purple__card span {
+  font-weight: 700;
+}
+
+main .right__container .white__card {
+  background-color: white;
+  height: 500px;
+  width: 540px;
+  border-radius: 8px 8px 8px 8px;
+  -webkit-box-shadow: 0 8px rgba(80, 78, 78, 0.383);
+          box-shadow: 0 8px rgba(80, 78, 78, 0.383);
+  min-height: 450px;
+}
+
+main .right__container .white__card .form__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 400px;
+  padding-top: 90px;
+}
+
+main .right__container .white__card .form__container form {
+  padding-bottom: 20px;
+}
+
+main .right__container .white__card .form__container input {
+  height: 55px;
+  width: 450px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 8px 8px 8px 8px;
+  border: 1px solid;
+  border-color: #b9b6d3;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+main .right__container .white__card .form__container .button {
+  background-color: #38cc8c;
+  color: white;
+  border-style: none;
+  font-weight: bold;
+  border-radius: 8px 8px 8px 8px;
+  padding: 20px 0 20px 0;
+  width: 450px;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0 3px #2c9b6b;
+          box-shadow: 0 3px #2c9b6b;
+  cursor: pointer;
+}
+
+main .right__container .white__card .form__container .button:hover {
+  background-color: #6ce4b0;
+  -webkit-box-shadow: 0 3px #37c386;
+          box-shadow: 0 3px #37c386;
+}
+
+main .right__container .white__card .form__container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+main .right__container .white__card .form__container ul p {
+  margin: 0;
+  color: #ff7a7a;
+  text-align: right;
+}
+
+main .right__container .white__card .form__container ul div {
+  position: relative;
+}
+
+main .right__container .white__card .form__container ul div img {
+  visibility: hidden;
+  height: 25px;
+  position: absolute;
+  right: 10px;
+  top: 25px;
+}
+
+main .right__container .white__card .form__container p {
+  color: #b9b6d3;
+  font-size: 11px;
+}
+
+main .right__container .white__card .form__container p span {
+  color: #ff7a7a;
+  font-weight: bold;
+}
+
+/* media query */
+@media only screen and (max-width: 960px) {
+  main {
+    height: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: unset;
+  }
+  main .left__container {
+    padding: unset;
+    height: unset;
+    width: 300px;
+  }
+  main .left__container .left__header {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+  }
+  main .left__container .left__paragraph {
+    text-align: center;
+    font-size: 12px;
+  }
+  main .right__container {
+    padding-top: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 800px;
+  }
+  main .right__container .white__card {
+    width: 350px;
+  }
+  main .right__container .white__card .form__container input {
+    width: 300px;
+  }
+  main .right__container .white__card .form__container .button {
+    width: 300px;
+  }
+  main .right__container .white__card .form__container p {
+    text-align: center;
+  }
+  main .right__container .purple__card {
+    width: 350px;
+    height: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media only screen and (max-width: 1663px) {
+  main {
+    padding: unset;
+  }
+}
+/*# sourceMappingURL=style.css.map */

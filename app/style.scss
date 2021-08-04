@@ -1,0 +1,196 @@
+@import "global";
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: $font-family;
+  background-image: url(/images/bg-intro-desktop.png);
+  background-color: $primary-red;
+  font-size: $font-size;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 95vh;
+  padding-left: 320px;
+  padding-right: 320px;
+
+  .left__container {
+    padding: 20px 20px 20px 20px;
+    color: white;
+    height: 350px;
+    width: 600px;
+
+    .left__header {
+      font-size: 50px;
+    }
+  }
+  .right__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 95vh;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    min-height: 900px;
+
+    .purple__card {
+      background-color: $accent;
+      height: 60px;
+      width: 540px;
+      border-radius: 8px 8px 8px 8px;
+      box-shadow: 0 8px hsla(0, 1%, 31%, 0.383);
+      p {
+        color: white;
+        text-align: center;
+      }
+      span {
+        font-weight: 700;
+      }
+    }
+
+    .white__card {
+      background-color: white;
+      height: 500px;
+      width: 540px;
+      border-radius: 8px 8px 8px 8px;
+      box-shadow: 0 8px hsla(0, 1%, 31%, 0.383);
+      min-height: 450px;
+      .form__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+        padding-top: 90px;
+        form {
+          padding-bottom: 20px;
+        }
+        input {
+          height: 55px;
+          width: 450px;
+          padding: 12px 20px;
+          margin: 8px 0;
+          border-radius: 8px 8px 8px 8px;
+          border: 1px solid;
+          border-color: $neutral-grayishBlue;
+          font-family: $font-family;
+          font-size: 16px;
+          font-weight: 500;
+        }
+
+        .button {
+          background-color: $primary-green;
+          color: white;
+          border-style: none;
+          font-weight: bold;
+          border-radius: 8px 8px 8px 8px;
+          padding: 20px 0 20px 0;
+          width: 450px;
+          letter-spacing: 1px;
+          box-shadow: 0 3px hsl(154, 56%, 39%);
+          cursor: pointer;
+        }
+        .button:hover {
+          background-color: hsl(154, 69%, 66%);
+          box-shadow: 0 3px hsl(154, 56%, 49%);
+        }
+
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          p {
+            margin: 0;
+            color: $primary-red;
+            text-align: right;
+          }
+          div{
+            position:relative;
+            img{
+              visibility: hidden;
+              height:25px;
+              position:absolute;
+              right:10px;
+              top:25px;
+            }
+          }
+        }
+        p {
+          color: $neutral-grayishBlue;
+          font-size: 11px;
+
+          span {
+            color: $primary-red;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* media query */
+$breakpoint: 960px;
+@media only screen and (max-width: $breakpoint) {
+  main {
+    height: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: unset;
+    .left__container {
+      padding: unset;
+      height: unset;
+      width: 300px;
+      .left__header {
+        font-size: 30px;
+        text-align: center;
+        padding-top: 50px;
+      }
+      .left__paragraph {
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+    .right__container {
+      padding-top: unset;
+      align-items: center;
+      min-height: 800px;
+      .white__card {
+        width: 350px;
+        .form__container {
+          input {
+            width: 300px;
+          }
+          .button {
+            width: 300px;
+          }
+          p {
+            text-align: center;
+          }
+        }
+      }
+      .purple__card {
+        width: 350px;
+        height: 80px;
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+    }
+  }
+}
+$breakpoint2: 1663px;
+@media only screen and (max-width: $breakpoint2) {
+  main {
+    padding: unset;
+  }
+}
